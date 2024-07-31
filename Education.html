@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Level Input</title>
+<link rel="stylesheet" href="style.css">
+
+  <style>
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    select, input[type="text"] {
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 16px;
+    }
+    button {
+      height: 40px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<h1>Education</h1>
+<body>
+  <div class="container">
+    <form>
+      <label>Educational Level:</label>
+      <select id="educational level" name="educational level">
+        <option value="tenth">10th or below</option>
+        <option value="twelve">12th</option>
+        <option value="diploma">Diploma</option>
+        <option value="iit">IIT</option>
+        <option value="graduate">Graduate</option>
+        <option value="post graduate">Post Graduate</option>
+</select>
+      <label>College Name:</label>
+      <input type="text" id="college-name" name="college-name">
+      <br>
+     <label>Year of passing:</label>
+      <input type="text" id="pass" name="year of passing">
+      <br>
+      <label>Degree/Diploma Name:</label>
+      <select id="degree-name" name="degree-name">
+        <option value="">Select an option</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.E.">B.E.</option>
+        <option value="B.Sc.">B.Sc.</option>
+        <option value="B.A.">B.A.</option>
+        <option value="B.Com.">B.Com.</option>
+        <option value="BBA">BBA</option>
+        <option value="BCA">BCA</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="M.E.">M.E.</option>
+        <option value="M.Sc.">M.Sc.</option>
+        <option value="M.A.">M.A.</option>
+        <option value="M.Com.">M.Com.</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+        <option value="Diploma in Computer Engineering">Diploma in Computer Engineering</option>
+        <option value="Diploma in Electrical Engineering">Diploma in Electrical Engineering</option>
+        <option value="Diploma in Mechanical Engineering">Diploma in Mechanical Engineering</option>
+        <option value="Diploma in Civil Engineering">Diploma in Civil Engineering</option>
+        <option value="ITI in Electrical Engineering">ITI in Electrical Engineering</option>
+        <option value="ITI in Mechanical Engineering">ITI in Mechanical Engineering</option>
+        <option value="ITI in Civil Engineering">ITI in Civil Engineering</option>
+      </select>
+      <br>
+	<div class="wrap"> 
+            <button type="button" onclick="solve()">
+                Next
+            </button> <br>
+        </div>
+<script>
+        function solve() {
+            window.location.href = "skillexperience.html";
+        }
+    </script>
+    </form>
+</body>
+</html>
